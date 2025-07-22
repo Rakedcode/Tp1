@@ -31,7 +31,9 @@ Utilisation
 
 Techniques utilisées dans le programme
 Vecteur pour stocker les comptes
+```rust
 let mut comptes: Vec<CompteBancaire> = Vec::new();
+```
 
 
 Permet de créer un vecteur dans lequel seront stockés tous les comptes créés.
@@ -42,22 +44,25 @@ Utilisation de match
 
 Similaire à switch ou case en C, il permet de gérer le choix de l’utilisateur de manière claire.
 Fonction pour lire une chaîne de caractères
-
-```fn lire_texte() -> String {
+```rust
+fn lire_texte() -> String {
     let mut buffer = String::new();
     io::stdin().read_line(&mut buffer).unwrap();
     buffer.trim().to_string()
-}```
+}
+```
 
 Permet de lire une chaîne de caractères saisie par l’utilisateur dans le terminal.
 Cette fonction a été comprise en observant des exemples sur internet.
 Fonction pour lire un nombre (f64)
 
+```rust
 fn lire_f64() -> f64 {
     let mut buffer = String::new();
     io::stdin().read_line(&mut buffer).unwrap();
     buffer.trim().parse::<f64>().unwrap_or(0.0)
 }
+```
 
 Permet de lire un nombre décimal saisi par l’utilisateur.
 Renvoie 0.0 si l’utilisateur entre une valeur invalide.
