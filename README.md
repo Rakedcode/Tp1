@@ -31,8 +31,8 @@ Utilisation
 
 Techniques utilisées dans le programme
 Vecteur pour stocker les comptes
-
 let mut comptes: Vec<CompteBancaire> = Vec::new();
+
 
 Permet de créer un vecteur dans lequel seront stockés tous les comptes créés.
 Utilisation de loop
