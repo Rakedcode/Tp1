@@ -43,11 +43,11 @@ Utilisation de match
 Similaire à switch ou case en C, il permet de gérer le choix de l’utilisateur de manière claire.
 Fonction pour lire une chaîne de caractères
 
-fn lire_texte() -> String {
+```fn lire_texte() -> String {
     let mut buffer = String::new();
     io::stdin().read_line(&mut buffer).unwrap();
     buffer.trim().to_string()
-}
+}```
 
 Permet de lire une chaîne de caractères saisie par l’utilisateur dans le terminal.
 Cette fonction a été comprise en observant des exemples sur internet.
