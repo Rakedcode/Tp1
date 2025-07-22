@@ -44,6 +44,7 @@ Utilisation de match
 
 Similaire à switch ou case en C, il permet de gérer le choix de l’utilisateur de manière claire.
 Fonction pour lire une chaîne de caractères
+
 ```rust
 fn lire_texte() -> String {
     let mut buffer = String::new();
@@ -66,6 +67,8 @@ fn lire_f64() -> f64 {
 
 Permet de lire un nombre décimal saisi par l’utilisateur.
 Renvoie 0.0 si l’utilisateur entre une valeur invalide.
+
+
 Résumé
 
 Ce projet m’a permis de :
